@@ -105,14 +105,6 @@ public class JobTest {
         assertEquals(expectedOutput, job.toString());
     }
 
-//    @Test
-//    public void testJobConstructorSetsAllFields() {
-//        Job job = new Job("Product Tester",
-//                    new Employer("ACME"),
-//                    new Location("Desert"),
-//                    new PositionType("Quality Control"),
-//                    new CoreCompetency("Persistence"));
-//        assertNotEquals("Product Tester", job.getname(), "The name has to be a product tester");
-//    }
+
 }
 

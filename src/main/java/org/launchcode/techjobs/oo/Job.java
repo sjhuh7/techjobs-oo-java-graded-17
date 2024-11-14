@@ -50,17 +50,6 @@ public class Job {
                 "Core Competency: " + coreCompetencyValue + System.lineSeparator();
     }
 
-//    @Override
-//    public String toString() {
-//        return System.lineSeparator() +
-//                "ID: " + this.getId() + System.lineSeparator() +
-//                "Name: " + this.getName() + System.lineSeparator() +
-//                "Employer: " + this.getEmployer().getValue() + System.lineSeparator() +
-//                "Location: " + this.getLocation().getValue() + System.lineSeparator() +
-//                "Position Type: " + this.getPositionType().getValue() + System.lineSeparator() +
-//                "Core Competency: " + this.getCoreCompetency().getValue() + System.lineSeparator();
-
-//    }
 
     private String displayValue(Object value) {
         if (value == null || value.toString().isEmpty()) {
