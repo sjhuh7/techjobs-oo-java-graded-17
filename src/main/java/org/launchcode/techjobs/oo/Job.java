@@ -33,20 +33,21 @@ public class Job {
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
+
     @Override
     public String toString() {
-        String nameValue = (this.getName().isEmpty()) ? "Data not available" : this.getName();
-        String employerValue = (this.getEmployer().getValue().isEmpty()) ? "Data not available" : this.getEmployer().getValue();
-        String locationValue = (this.getLocation().getValue().isEmpty()) ? "Data not available" : this.getLocation().getValue();
-        String positionTypeValue = (this.getPositionType().getValue().isEmpty()) ? "Data not available" : this.getPositionType().getValue();
-        String coreCompetencyValue = (this.getCoreCompetency().getValue().isEmpty()) ? "Data not available" : this.getCoreCompetency().getValue();
+        String nameValue = (getName().isEmpty()) ? "Data not available" : getName();
+        String employerValue = (getEmployer().getValue().isEmpty()) ? "Data not available" : getEmployer().getValue();
+        String locationValue = (getLocation().getValue().isEmpty()) ? "Data not available" : getLocation().getValue();
+        String positionValue = (getPositionType().getValue().isEmpty()) ? "Data not available" : getPositionType().getValue();
+        String coreCompetencyValue = (getCoreCompetency().getValue().isEmpty()) ? "Data not available" : getCoreCompetency().getValue();
 
         return System.lineSeparator() +
-                "ID: " + this.getId() + System.lineSeparator() +
+                "ID: " + getId() + System.lineSeparator() +
                 "Name: " + nameValue + System.lineSeparator() +
                 "Employer: " + employerValue + System.lineSeparator() +
                 "Location: " + locationValue + System.lineSeparator() +
-                "Position Type: " + positionTypeValue + System.lineSeparator() +
+                "Position Type: " + positionValue + System.lineSeparator() +
                 "Core Competency: " + coreCompetencyValue + System.lineSeparator();
     }
 
